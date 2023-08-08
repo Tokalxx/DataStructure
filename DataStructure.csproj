@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DataStructure.UsingList.ListMethods</StartupObject>
+    <StartupObject>DataStructure.Sorting.SelectiveSort</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,8 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array\JaggedArray.cs" />
+    <Compile Include="Array\Populate2DArray.cs" />
+    <Compile Include="Array\UsingArrays.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorting\BuubleSortTesting.cs" />
+    <Compile Include="Sorting\SelectiveSort.cs" />
     <Compile Include="UsingList\ListMethods.cs" />
     <Compile Include="UsingList\ListTester.cs" />
   </ItemGroup>
