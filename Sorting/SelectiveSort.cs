@@ -21,6 +21,8 @@ namespace DataStructure.Sorting
             Console.WriteLine("Sorted");
             displayMethod(array);
 
+
+
             Console.ReadKey();
         }
 
@@ -28,17 +30,22 @@ namespace DataStructure.Sorting
         {
             for (int i = 0; i < array.Length - 1; i++)
             {
-                for (int j = 0; j < array.Length - i - 1; j++)
+                int smallerNum = i;
+
+                for (int j = i + 1; j < array.Length; j++)
                 {
-                    if (array[j] > array[j + 1])
+                    if (array[j] < array[smallerNum])
                     {
-                        int tempValue = array[j];
-                        array[j] = array[j + 1];
-                        array[j + 1] = tempValue;
+                        smallerNum = j;
                     }
                 }
+                int tempVar = array[smallerNum];
+                array[smallerNum] = array[i];
+                array[i] = tempVar;
+
             }
         }
+
         public static void displayMethod(int[] array)
         {
             for (int y = 0; y < array.Length; y++)
@@ -50,5 +57,7 @@ namespace DataStructure.Sorting
                 }
             }
         }
+
+
     }
 }
