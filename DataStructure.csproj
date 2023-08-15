@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DataStructure.Sorting.SelectiveSort</StartupObject>
+    <StartupObject>DataStructure.Lists.Sorted_Lists.DepartmentList</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,8 @@
     <Compile Include="Array\JaggedArray.cs" />
     <Compile Include="Array\Populate2DArray.cs" />
     <Compile Include="Array\UsingArrays.cs" />
+    <Compile Include="Lists\Sorted_Lists\DepartmentList.cs" />
+    <Compile Include="Lists\Sorted_Lists\SortedListRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sorting\BuubleSortTesting.cs" />
@@ -58,6 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lists\Unsorted_Lists\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

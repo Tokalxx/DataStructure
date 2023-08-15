@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Diagnostics;
 
 namespace DataStructure.Sorting
 {
@@ -7,7 +7,8 @@ namespace DataStructure.Sorting
     {
         static void Main(string[] args)
         {
-            int[] array = new int[100];
+            int[] array = new int[9999];
+            int[] arg = new int[9999];
             Random ranNum = new Random();
 
 
@@ -15,11 +16,12 @@ namespace DataStructure.Sorting
             {
                 array[x] = ranNum.Next(1, 500);
             }
-            Console.WriteLine("Unsorted");
-            displayMethod(array);
+            //Console.WriteLine("Unsorted");
+            //displayMethod(array);
             sortMethod(array);
-            Console.WriteLine("Sorted");
-            displayMethod(array);
+            bubbleSort(array);
+            //Console.WriteLine("Sorted");
+            //displayMethod(array);
 
 
 
@@ -28,6 +30,8 @@ namespace DataStructure.Sorting
 
         public static void sortMethod(int[] array)
         {
+            Stopwatch st = new Stopwatch();
+            st.Start();
             for (int i = 0; i < array.Length - 1; i++)
             {
                 int smallerNum = i;
@@ -42,8 +46,30 @@ namespace DataStructure.Sorting
                 int tempVar = array[smallerNum];
                 array[smallerNum] = array[i];
                 array[i] = tempVar;
-
             }
+            Console.WriteLine(st.ElapsedMilliseconds);
+            st.Stop();
+        }
+
+        public static void bubbleSort(int[] array)
+        {
+            Stopwatch st = new Stopwatch();
+            st.Start();
+            for (int x = 0; x < array.Length - 1; x++)
+            {
+                for (int y = 0; y < array.Length - x - 1; y++)
+                {
+                    if (array[y] > array[y + 1])
+                    {
+                        int tempValue = array[y];
+                        array[y] = array[y + 1];
+                        array[y + 1] = tempValue;
+                    }
+                }
+            }
+            st.Stop();
+            Console.WriteLine(st.ElapsedMilliseconds);
+
         }
 
         public static void displayMethod(int[] array)
