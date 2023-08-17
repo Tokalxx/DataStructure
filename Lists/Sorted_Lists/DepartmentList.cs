@@ -21,7 +21,7 @@ namespace DataStructure.Lists.Sorted_Lists
         }
 
         /// <summary>
-        /// 
+        /// Display the Sordted List
         /// </summary>
         /// <param name="list"></param>
         private static void displayList(SortedList<string, List<string>> list)
