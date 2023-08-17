@@ -21,7 +21,9 @@ namespace DataStructure.Lists
 
             list.AddFirst("Benoni");
             list.AddAfter(list.Find("Brooklyn"), "Midrand");
-            list.AddBefore(list.Find("Johansburg"), "Cape Town");
+
+            LinkedListNode<string> node1 = list.Find("Johansburg");
+            list.AddBefore(node1, "Cape Town");
 
             displayList(list);
 
