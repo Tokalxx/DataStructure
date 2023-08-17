@@ -49,6 +49,8 @@
     <Compile Include="Array\JaggedArray.cs" />
     <Compile Include="Array\Populate2DArray.cs" />
     <Compile Include="Array\UsingArrays.cs" />
+    <Compile Include="Lists\LinkedList\CustomLinkList\CustomeLinkedListcs.cs" />
+    <Compile Include="Lists\LinkedList\CustomLinkList\MyLinkedList.cs" />
     <Compile Include="Lists\LinkedList\LinkedList.cs" />
     <Compile Include="Lists\Sorted_Lists\DepartmentList.cs" />
     <Compile Include="Lists\Sorted_Lists\SortedListRunner.cs" />
