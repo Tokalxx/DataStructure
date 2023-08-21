@@ -14,7 +14,10 @@ namespace DataStructure.Generics
             myLinkedList.addToLast("Lee");
             myLinkedList.addToLast("Zee");
 
-            myLinkedList.Display();
+            foreach (string x in myLinkedList)
+            {
+                Console.WriteLine(x);
+            }
 
             Console.ReadKey();
         }

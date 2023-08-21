@@ -1,9 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
-namespace DataStructure.Generics
+namespace DataStructure.Generics.GenericConstrians
 {
-    public class MyLinkedList<T> : IEnumerable<T>
+    public class MyLinkedList<T> : IEnumerable<T> where T : Student
     {
 
 
@@ -76,4 +77,22 @@ namespace DataStructure.Generics
             return GetEnumerator();
         }
     }
+
+    public class Student
+    {
+        public int StudentID { get; set; }
+        public String FirstName { get; set; }
+        public String LastName { get; set; }
+
+        public Student(int studentId, string firstName, string lastName)
+        {
+            StudentID = studentId;
+            FirstName = firstName;
+            LastName = lastName;
+        }
+    }
 }
+
+
+
+
