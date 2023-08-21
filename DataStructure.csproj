@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DataStructure.Generics.ClassActivity</StartupObject>
+    <StartupObject>DataStructure.Generics.MyLinkedListTester</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,8 @@
     <Compile Include="Array\Populate2DArray.cs" />
     <Compile Include="Array\UsingArrays.cs" />
     <Compile Include="Generics\ClassActivity.cs" />
+    <Compile Include="Generics\MyLinkedList.cs" />
+    <Compile Include="Generics\MyLinkedListTester.cs" />
     <Compile Include="Lists\LinkedList\CustomLinkList\CustomeLinkedListcs.cs" />
     <Compile Include="Lists\LinkedList\CustomLinkList\MyLinkedList.cs" />
     <Compile Include="Lists\LinkedList\LinkedList.cs" />
