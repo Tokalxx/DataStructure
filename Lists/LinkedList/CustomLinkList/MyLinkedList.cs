@@ -1,4 +1,6 @@
-﻿namespace DataStructure.Lists.CustomLinkList
+﻿using System;
+
+namespace DataStructure.Lists.CustomLinkList
 {
     public class MyLinkedList
     {
@@ -42,7 +44,22 @@
 
         public void Display()
         {
+            /*
+             5 
+             */
             nodes currentNode = head;
+
+            while (currentNode != null)
+            {
+                Console.WriteLine(currentNode.data);
+                currentNode = currentNode.next;
+
+
+            }
+
+
+
+
 
         }
     }
